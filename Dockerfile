@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
-ENV BITCOINSV_VERSION=0.2.0
-ENV BITCOINSV_CHECKSUM=e880d414b3dc355128788e9d70e0b16f9aace7cfb2a5766217969c79d4fad565
+ENV BITCOINSV_VERSION=0.2.1
+ENV BITCOINSV_CHECKSUM=ead4e26a516ff79be3615b165ceba41dc08c6c7656a0054b591d0c8085c6208c
 
 RUN apt-get update && apt-get install -y wget && apt-get clean
 RUN wget https://download.bitcoinsv.io/bitcoinsv/${BITCOINSV_VERSION}/bitcoin-sv-${BITCOINSV_VERSION}-x86_64-linux-gnu.tar.gz \
